@@ -1,6 +1,7 @@
 <?php
 require_once 'config.php';
 
+require_once 'partials/header.php';
 
 if($_SERVER['REQUEST_URI'] === '/movie_poll/login') {
      require_once SOURCE_BASE . 'login.php';
@@ -9,3 +10,5 @@ if($_SERVER['REQUEST_URI'] === '/movie_poll/login') {
 } elseif($_SERVER['REQUEST_URI'] === '/movie_poll/home') {
      require_once SOURCE_BASE . 'home.php';
 }
+
+require_once 'partials/footer.php';
