@@ -1,19 +1,11 @@
 <?php
 require_once 'config.php';
 
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width=device-width initial-scale=1.0">
-  <title>MovieReview</title>
-  <link rel=stylesheet href="<?php echo BASE_CSS_PATH; ?>style.css">
-</head>
-<body>
-<img src="<?php echo BASE_IMAGE_PATH ?>movie_icon.svg" alt="">
-Hello
-  <script src="<?php echo BASE_JS_PATH; ?>sample.js"></script>
-</body>
+if($_SERVER['REQUEST_URI'] === '/movie_poll/login') {
+     require_once SOURCE_BASE . 'login.php';
+} elseif($_SERVER['REQUEST_URI'] === '/movie_poll/register') {
+     require_once SOURCE_BASE . 'register.php';
+} elseif($_SERVER['REQUEST_URI'] === '/movie_poll/home') {
+     require_once SOURCE_BASE . 'home.php';
+}
