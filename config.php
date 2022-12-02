@@ -17,7 +17,7 @@ define('BASE_JS_PATH', BASE_CONTEXT_PATH . 'js/');
 echo "BASE_JS_PATH = " . BASE_JS_PATH . " ";
 define('BASE_CSS_PATH', BASE_CONTEXT_PATH . 'css/');
 echo "BASE_CSS_PATH = " . BASE_CSS_PATH . " ";
-define('SOURCE_BASE', __DIR__ . '/views/');
+define('SOURCE_BASE', __DIR__ . '/php/');
 echo "SOURCE_BASE = " . SOURCE_BASE . " ";
 
 define('GO_HOME', 'home');
